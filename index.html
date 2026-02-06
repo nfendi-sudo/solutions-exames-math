@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحل الكامل لسلسلة الدوال - منصة نوفل</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+        body { font-family: 'Cairo', sans-serif; background-color: #f4f7f6; padding: 20px; direction: rtl; }
+        .container { max-width: 950px; margin: auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .btn-download { background: #2980b9; color: white; border: none; padding: 15px; border-radius: 8px; cursor: pointer; width: 100%; font-size: 18px; font-weight: bold; margin-bottom: 25px; transition: 0.3s; }
+        .btn-download:hover { background: #1a5276; }
+        .header-box { text-align: center; border: 2px solid #2c3e50; padding: 15px; margin-bottom: 30px; background: #ecf0f1; border-radius: 10px; }
+        .exercise-box { border-right: 5px solid #e67e22; padding: 15px; margin-bottom: 25px; background: #fafafa; border-bottom: 1px solid #eee; position: relative; }
+        .title { color: #2c3e50; font-weight: bold; font-size: 1.2em; display: block; margin-bottom: 10px; }
+        .grading { position: absolute; left: 15px; top: 15px; color: #27ae60; font-weight: bold; border: 1px solid #27ae60; padding: 2px 8px; border-radius: 4px; font-size: 0.9em; }
+        .step-title { color: #d35400; font-weight: bold; margin-top: 10px; display: block; text-decoration: underline; }
+        .math-block { background: #fff; border: 1px solid #ddd; padding: 12px; border-radius: 8px; margin: 10px 0; text-align: center; color: #2c3e50; font-size: 1.1em; }
+        .footer { text-align: center; margin-top: 30px; font-size: 0.8em; color: #7f8c8d; }
+        @media print { .btn-download { display: none; } }
+    </style>
+</head>
+<body>
+
+<div class="container" id="printable-content">
+    <button class="btn-download" onclick="generatePDF()">تحميل الحل الكامل (PDF) - نسخة الأستاذ</button>
+
+    <div class="header-box">
+        <h1>الإجابة النموذجية الشاملة لتمارين الدوال</h1>
+        <p>مستوى: 3 ثانوي (جميع الشعب العلمية) | إعداد منصة نوفل التعليمية</p>
+    </div>
+
+    <h2 style="color: #c0392b; border-bottom: 2px solid;">أولاً: الدوال الأسية</h2>
+
+    <div class="exercise-box">
+        <span class="grading">03 ن</span>
+        <span class="title">حل التمرين الأول: دراسة التغيرات</span>
+        <span class="step-title">1. النهايات:</span>
+        \( \lim_{x \to -\infty} f(x) = \lim_{x \to -\infty} (xe^x - e^x + 2) = 0 - 0 + 2 = 2 \)<br>
+        \( \lim_{x \to +\infty} f(x) = \lim_{x \to +\infty} (x-1)e^x + 2 = (+\infty)(+\infty) + 2 = +\infty \)
+        <span class="step-title">2. المشتقة:</span>
+        \( f'(x) = 1 \cdot e^x + (x-1)e^x = e^x(1+x-1) = x e^x \).<br>
+        الإشارة: \( f'(x) \) من إشارة \( x \). متناقصة على \( ]-\infty, 0] \) ومتزايدة على \( [0, +\infty[ \).
+    </div>
+
+    <div class="exercise-box">
+        <span class="grading">02 ن</span>
+        <span class="title">حل التمرين الثاني: الدوال الكسرية</span>
+        <span class="step-title">1. الفردية:</span>
+        \( g(-x) = \frac{e^{-x}-1}{e^{-x}+1} = \frac{\frac{1-e^x}{e^x}}{\frac{1+e^x}{e^x}} = \frac{-(e^x-1)}{e^x+1} = -g(x) \). إذن الدالة فردية، والمنحنى \( (C_g) \) متناظر بالنسبة للمبدأ \( O \).
+        <span class="step-title">2. المشتقة:</span>
+        \( g'(x) = \frac{e^x(e^x+1) - e^x(e^x-1)}{(e^x+1)^2} = \frac{2e^x}{(e^x+1)^2} \). وهي موجبة تماماً على \( \mathbb{R} \).
+    </div>
+
+    <div class="exercise-box">
+        <span class="grading">1.5 ن</span>
+        <span class="title">حل التمرين الثالث: المقاربات</span>
+        <span class="step-title">1. إثبات المقارب:</span>
+        نحسب \( \lim_{x \to -\infty} [h(x) - (2x+1)] = \lim_{x \to -\infty} (-e^x) = 0 \).<br>
+        إذن \( y=2x+1 \) مستقيم مقارب مائل بجوار \( -\infty \).
+        <span class="step-title">2. الوضعية:</span>
+        ندرس إشارة الفرق \( d(x) = -e^x \). بما أن \( e^x > 0 \) فإن \( d(x) < 0 \).<br>
+        إذن المنحنى \( (C_h) \) يقع <b>تحت</b> المستقيم \( (\Delta) \).
+    </div>
+
+    <div class="exercise-box">
+        <span class="grading">02 ن</span>
+        <span class="title">حل التمرين الرابع: المناقشة الوسيطية</span>
+        \( f_m(x) = 1 \implies \frac{m e^x}{e^x+1} = 1 \implies m e^x = e^x + 1 \implies e^x(m-1) = 1 \).<br>
+        إذن \( e^x = \frac{1}{m-1} \). بما أن \( e^x > 0 \)، يشترط أن يكون \( \frac{1}{m-1} > 0 \).<br>
+        - إذا كان \( m \leq 1 \): لا يوجد حلول.<br>
+        - إذا كان \( m > 1 \): يوجد حل وحيد هو \( x = \ln(\frac{1}{m-1}) \).
+    </div>
+
+    <div class="exercise-box">
+        <span class="grading">1.5 ن</span>
+        <span class="title">حل التمرين الخامس: المتراجحة</span>
+        بوضع \( T = e^x \) نجده \( 2T^2 - 5T + 2 > 0 \). الجذور: \( T_1=2, T_2=0.5 \).<br>
+        الحل في \( T \): \( T \in ]0, 0.5[ \cup ]2, +\infty[ \).<br>
+        <div class="math-block">S = ]-\infty, -\ln(2)[ \cup ]\ln(2), +\infty[</div>
+    </div>
+
+    <h2 style="color: #c0392b; border-bottom: 2px solid;">ثانياً: الدوال اللوغاريتمية</h2>
+
+    <div class="exercise-box">
+        <span class="grading">02 ن</span>
+        <span class="title">حل التمرين السادس: مجموعات التعريف</span>
+        1) \( f(x) = \ln(x^2-4) \): الشرط \( x^2-4 > 0 \).
+        <div class="math-block">D_f = ]-\infty, -2[ \cup ]2, +\infty[</div>
+        2) \( g(x) = \ln(\frac{x+1}{x-1}) \): الشرط \( \frac{x+1}{x-1} > 0 \).
+        <div class="math-block">D_g = ]-\infty, -1[ \cup ]1, +\infty[</div>
+    </div>
+
+    <div class="exercise-box">
+        <span class="grading">03 ن</span>
+        <span class="title">حل التمرين السابع: مبرهنة القيم المتوسطة</span>
+        - النهايات: \( \lim_{x \to 0^+} f(x) = -\infty \)، \( \lim_{x \to +\infty} f(x) = +\infty \).<br>
+        - الرتابة: \( f'(x) = 1 + \frac{1}{x} > 0 \). الدالة مستمرة ومتزايدة تماماً.<br>
+        - \( f(0.5) \approx -0.19 \)، \( f(0.6) \approx 0.08 \).<br>
+        بما أن \( f(0.5) \times f(0.6) < 0 \)، فإنه حسب مبرهنة القيم المتوسطة يوجد حل وحيد \( \alpha \).
+    </div>
+
+    <div class="exercise-box">
+        <span class="grading">02 ن</span>
+        <span class="title">حل التمرين الثامن: التزايد المقارن</span>
+        \( h'(x) = \frac{\frac{1}{x} \cdot x^2 - 2x \ln(x)}{x^4} = \frac{x(1-2\ln(x))}{x^4} = \frac{1-2\ln(x)}{x^3} \).<br>
+        المشتقة تنعدم عند \( \ln(x) = 0.5 \implies x = \sqrt{e} \).<br>
+        القيمة الحدية الكبرى هي \( h(\sqrt{e}) = \frac{0.5}{e} = \frac{1}{2e} \).
+    </div>
+
+    <div class="exercise-box">
+        <span class="grading">02 ن</span>
+        <span class="title">حل التمرين التاسع: تركيب الدوال</span>
+        المقارب المائل بجوار \( +\infty \):<br>
+        \( \phi(x) = \ln(e^{2x}(1 - e^{-x} + e^{-2x})) = \ln(e^{2x}) + \ln(1 - e^{-x} + e^{-2x}) = 2x + \ln(1 - \dots) \).<br>
+        بما أن \( \lim_{x \to +\infty} \ln(1 - e^{-x} + e^{-2x}) = 0 \)، فإن \( y=2x \) مقارب مائل.
+    </div>
+
+    <div class="exercise-box">
+        <span class="grading">01 ن</span>
+        <span class="title">حل التمرين العاشر: المعادلة</span>
+        الشرط: \( x > 1 \).<br>
+        \( (x+2)(x-1) = 4 \implies x^2 + x - 6 = 0 \).<br>
+        الحلول: \( x=2 \) (مقبول)، \( x=-3 \) (مرفوض).
+        <div class="math-block">S = \{ 2 \}</div>
+    </div>
+
+    <div class="footer">
+        <p>جميع الحقوق محفوظة لمنصة نوفل التعليمية &copy; 2026</p>
+    </div>
+</div>
+
+<script>
+    function generatePDF() {
+        const element = document.getElementById('printable-content');
+        const opt = {
+            margin: 5,
+            filename: 'Full_Solution_Nawfal.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+        html2pdf().set(opt).from(element).save();
+    }
+</script>
+
+</body>
+</html>
